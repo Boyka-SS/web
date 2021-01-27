@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+
+<body>
+    <form>
+        用户名：<input type="text" value="请输入您的用户名"><br> 密码：
+        <input type="password" value="输入密码"><br> 性别：
+        <label for="nan">男</label> <input type="radio" name="sex" id="nan">
+        <label for="nv">女</label> <input name="sex" type="radio" id="nv"><br> 爱好：体育
+        <input type="checkbox" name="hobby">电影<input name="hobby" type="checkbox">电视剧<input name="hobby" type="checkbox"><br>
+        <input type="submit" value="免费注册">
+
+
+    </form>
+</body>
+
+</html>
+<!-- 
+表单
+1、使用目的：收集用户数据
+2、组成：表单域、表单控件（表单元素）、提示信息
+3、表单域：包含表单元素的区域，在HTML中<form>定义表单域，实现用户信息的收集和传递
+          <form>把其范围内的表单元素信息提交给服务器
+4、表单域属性：
+            1）action：URL地址 ，指定接收并处理表单数据的服务器程序的url地址
+            2）method：get/post , 设置表单数据的提交方式，
+            3）name：名称 ， 指定表单元素名称，区分同一界面不同表单
+5、表单控件：允许用户在表单中输入或者选择的内容控件
+            1）input输入表元素
+                <input>用于收集用户信息，包含一个type属性，根据不同的type属性值，输入的字段有很多种形式（
+                文本字段、复选框、掩码后的文本控件、单选按钮、按钮）
+              语法：
+                <input type="属性值" />
+              
+                注意：<input/>单标签；type属性设置不同的属性值用来指定不同的控件类型
+              
+              type属性值：
+                    button 定义可点击按钮（通过JS启动脚本）
+                    checkbox 定义复选框,复选框必须有相同的名字name
+                    file 定义输入字段和“浏览”按钮，供文件上传
+                    hidden 定义隐藏的输入字段
+                    image 定义图像形式的提交按钮
+                    password 定义密码字段。其中字段会被掩码
+                    radio 定义单选按钮，多个单选按钮必须有相同的名字name，才可以实现多选1
+                    reset 定义重置按钮。清除表单中所有数据
+                    submit 提交按钮，表单数据发送服务器
+                    text 单行的输入字段，可在其中输入文本。默认宽度为20个字符
+            2）select下拉表单元素
+                使用场景：多个选项供用户选择，为节约页面空间
+                语法：
+                        <select name="" id="">
+                            <option value="">选项1</option>
+                            <option value="">选项2</option>
+                            <option value="">选项3</option>
+                            
+                        </select>
+                注意：
+                        <select>至少包含一对<option>；
+                        <option>中定义 selected="selected"时，当前项即为默认选中项
+            3）textarea文本域元素
+                使用场景：用户输入内容较多
+                语法：
+                        <textarea name="" id="" cols="行中字符数" rows="行数"></textarea>
+                            
+
+            ===========================以下属于<input>知识============================================
+            4）<input>常用其他属性：
+                ① name  用户自定义  定义input元素的名称
+                ② value 用户自定义  规定input元素的值
+                ③ checked checked   规定此input元素首次加载时被选中
+                ④ maxlength 正整数 规定输入字段中的字符的最大长度
+            5）注意：
+                name和value是每个表单元素都有的属性值，主要提供后台人员使用
+                name表单元素名字，要求单选按钮和复选框要有相同的name值
+            6）<label>标签：为input元素定义标注
+                <label>标签绑定表单元素，点击<label>标签内的文本时，自动聚焦对应的表单元素上去。
+                语法：
+                     <label for="内容">文本内容</label> <input type="xxx" name="xxx" id="内容">
+                    
+                     <label>标签的for属性应当与相关元素的id属性相同
+
+ -->

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font</title>
+    <style>
+        p {
+            font-family: '微软雅黑';
+        }
+        
+        div {
+            /* font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: 'Microsoft YaHei'; */
+            font: italic 700 16px 'Microsoft YaHei';
+        }
+        
+        .bold {
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <h4> pink的秘密</h4>
+    <p> 那一抹众人中最漂亮的颜色,</p>
+    <p>优雅,淡然,又那么心中清澈. </p>
+    <p>前端总是伴随着困难和犯错, </p>
+    <p>静心,坦然,攻克一个又一个. </p>
+    <p class="bold">拼死也要克服它, </p>
+    <p>这是pink的秘密也是老师最终的嘱托.</p>
+
+    <div>三生三世十里桃花，一心一意百行代码</div>
+</body>
+
+</html>
+<!-- 
+    css字体属性：
+        1) font-family: 定义文本的字体系列
+            各种字体之间必须使用英文状态下的逗号隔开
+            一般情况下，如果有空格隔开的多个单词组成的字体，需要加 ''
+            使用系统默认的字体
+            常用的字体：    
+                body {
+                    font-family:'Microsoft YaHei',tahoma,arial,'Hiragino Sans GB';
+                }
+            多个字体一个一个进行检测用户电脑是否拥有某项字体
+        2）font-size：定义字体大小，带上单位px
+            px(像素) 页面常用单位
+            谷歌浏览器默认的文字大小是16px
+            不同浏览器的默认大小可能不一，给定一个大小，不要默认大小
+            可以给body指定整个页面的文字的大小
+            标题标签比较特殊，需要单独规定
+        3）font-weight:定义文本字体的粗细
+            查看CSS中文手册
+            normal：400
+            bold：700
+        4）font-style：设置文本的风格（是否斜体）
+            查看帮助手册
+        5）复合属性：节约代码
+            font: font-style font-weight font-size/font-height font-family;
+            此属性不可以颠倒顺序，并且属性之间空格隔开，此外，不需要设置的属性取默认值
+            但是必须保留 font-size、font-family 属性，否则 font 属性无效
