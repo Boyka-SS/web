@@ -1,0 +1,23 @@
+ a {
+     display: block;
+     width: 230px;
+     height: 40px;
+     background-color: #55585a;
+     text-decoration: none;
+     color: #fff;
+     font-size: 14px;
+     text-indent: 2em;
+     line-height: 50px;
+ }
+ 
+ a:link {
+     background-color: #55585a;
+ }
+ 
+ a:visited {}
+ 
+ a:hover {
+     background-color: #e26905;
+ }
+ 
+ a:active {}
